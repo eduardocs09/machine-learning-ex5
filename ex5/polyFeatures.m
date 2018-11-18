@@ -15,7 +15,11 @@ X_poly = zeros(numel(X), p);
 %
 % 
 
-
+for line = 1:size(X,1)
+  for column = 1:p
+    X_poly(line, column) = X(line,1) ^ column;
+  endfor
+endfor
 
 
 
